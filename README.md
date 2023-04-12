@@ -7,7 +7,7 @@ View details about a specific Pokemon, including its type, description
 soon (attacks per level) and more
 
 Technologies Used
-HTML, CSS, and JavaScript for the front-end
+HTML, CSS, and TypeScript,React for the front-end
 PokeAPI for retrieving Pokemon information
 
 
