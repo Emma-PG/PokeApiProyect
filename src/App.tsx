@@ -14,7 +14,6 @@ function App() {
   const [img, setImg] = useState('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png')
   const [type, setType] = useState('electric')
   const [description, setDescription] = useState('When several of these POKéMON gather, their electricity can build and cause lightning storms.')
-  const [moves, setMoves] = useState()
 
   useEffect(() => {
     const abortController = new AbortController()
@@ -44,8 +43,7 @@ function App() {
     return await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
       .then(response => response.json())
       .then(data => {
-        const { sprites, types} = data
-        const obj:any[] = []
+        const { sprites, types } = data
 
         setImg(sprites.other["official-artwork"].front_default);
         setType(types.length > 1
@@ -78,8 +76,7 @@ function App() {
       <section className='d-flex flex-row-reverse justify-content-center col-12 content'>
         <AsideList handleClick={handleClick} />
         <Main tittle={tittle} pokemon={pokemon} img={img} type={type} description={description} />
-        <AsidePercs/>
-        
+        <AsidePercs />
       </section>
       <Footer />
     </>
