@@ -1,5 +1,4 @@
 import './App.css'
-import logo from './assets/logo2.png'
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import { EntriesProps } from './types'
 import AsideList from './components/AsideList'
@@ -8,32 +7,14 @@ import AsidePercs from './components/AsidePercs'
 import Footer from './components/Footer'
 import Header from './components/Header'
 
+
 function App() {
-  // const [listP, setListP] = useState([])
   const [pokemon, setPokemon] = useState('pikachu')
   const [tittle, setTittle] = useState('Pikachu')
   const [img, setImg] = useState('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png')
   const [type, setType] = useState('electric')
   const [description, setDescription] = useState('When several of these POKéMON gather, their electricity can build and cause lightning storms.')
-
-  // useEffect(() => {
-  //   const abortController = new AbortController()
-
-  //   fetchList({ signal: abortController.signal })
-  //     .then(data => {
-  //       setListP(data.results)
-  //     })
-
-  //   return () => {
-  //     abortController.abort()
-  //   }
-  // }, [])
-
-  // const fetchList = async ({ signal }: RequestInit) => {
-  //   return await fetch('https://pokeapi.co/api/v2/pokemon?limit=1200&offset=0', {
-  //     signal
-  //   }).then(res => res.json())
-  // }
+  const [moves, setMoves] = useState()
 
   useEffect(() => {
     const abortController = new AbortController()
@@ -63,7 +44,9 @@ function App() {
     return await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
       .then(response => response.json())
       .then(data => {
-        const { sprites, types } = data
+        const { sprites, types} = data
+        const obj:any[] = []
+
         setImg(sprites.other["official-artwork"].front_default);
         setType(types.length > 1
           ? `${types[0].type.name} ${types[1].type.name}`
@@ -71,7 +54,6 @@ function App() {
       }
       )
   }
-
 
   const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault()
@@ -92,15 +74,23 @@ function App() {
 
   return (
     <>
-      <Header handleChange={handleChange} handleSubmit={handleSubmit}/>
+      <Header handleChange={handleChange} handleSubmit={handleSubmit} />
       <section className='d-flex flex-row-reverse justify-content-center col-12 content'>
-        <AsideList  handleClick={handleClick} />
+        <AsideList handleClick={handleClick} />
         <Main tittle={tittle} pokemon={pokemon} img={img} type={type} description={description} />
-        <AsidePercs />
+        <AsidePercs/>
+        
       </section>
       <Footer />
     </>
   )
 }
+// moves.forEach((element:any) => {
+//   const moveName:string = element.move.name
+//   const moveAtLevel:number =  element.version_group_details[0].level_learned_at
+//   if (element.version_group_details[0].level_learned_at > 0 && element.version_group_details[0].move_learn_method.name === 'level-up') {
+//     obj.push([moveName,moveAtLevel])
+//   }
+// });
 
 export default App

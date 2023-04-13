@@ -1,11 +1,5 @@
+import {pokemonDesc} from '../types'
 
-interface pokemonDesc {
-    img:string;
-    tittle:string;
-    type:string;
-    description:string;
-    pokemon:string;
-}
 const Main = ({img,tittle,pokemon,type,description}:pokemonDesc)=>{
     return(
         <main className='col-9 col-lg-5'>

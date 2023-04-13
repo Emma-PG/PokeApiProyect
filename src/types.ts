@@ -20,3 +20,14 @@ export interface Props{
   handleChange?:React.ChangeEventHandler<HTMLInputElement>
 }
 
+export interface pokemonDesc {
+  img:string;
+  tittle:string;
+  type:string;
+  description:string;
+  pokemon:string;
+
+}
+export interface Moves{
+  moves?:[]
+}
