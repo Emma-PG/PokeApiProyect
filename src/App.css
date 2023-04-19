@@ -44,9 +44,11 @@ header button:hover {
     cursor: pointer;
 }
 
+
 .Others{
     background-color: #a8dadc;
     border-radius: 2% 0 0 2% ;
+    height: 85vh;
 }
 
 .PokemonName {
@@ -66,7 +68,7 @@ header button:hover {
 
 .Card {
     border-radius: 0 2% 2% 0;
-    height: 80vh;
+    height: 85vh;
     background-color: #457b9d;
     min-width: 282px
 }
@@ -95,76 +97,77 @@ header button:hover {
 .List{
     height: 80vh;
     background-color: #f1faee;
+    height: 85vh;
 }
 
 .fire {
-    background-color: #e63946 !important;
+    background-color: #e63946 ;
 }
 
 .normal {
-    background-color: #a8a4a4 !important;
+    background-color: #a8a4a4 ;
 }
 
 .water {
-    background-color: #39a1e6 !important;
+    background-color: #39a1e6 ;
 }
 
 .electric {
-    background-color: #e6e339 !important;
+    background-color: #e6e339 ;
 }
 
 .grass {
-    background-color: #39e664 !important;
+    background-color: #39e664 ;
 }
 
 .ice {
-    background-color: #39e6cf !important;
+    background-color: #39e6cf ;
 }
 
 .fighting {
-    background-color: #e65339 !important;
+    background-color: #e65339 ;
 }
 
 .poison {
-    background-color: #a139e6 !important;
+    background-color: #a139e6 ;
 }
 
 .ground {
-    background-color: #946b3c !important;
+    background-color: #946b3c ;
 }
 
 .flying {
-    background-color: #3967e6 !important;
+    background-color: #3967e6 ;
 }
 
 .psychic {
-    background-color: #b44f7e !important;
+    background-color: #b44f7e ;
 }
 
 .bug {
-    background-color: #a4e639 !important;
+    background-color: #a4e639 ;
 }
 
 .rock {
-    background-color: #6d4f4f !important;
+    background-color: #6d4f4f ;
 }
 
 .ghost {
-    background-color: #61468f !important;
+    background-color: #61468f ;
 }
 
 .dragon {
-    background-color: #4b4f80 !important;
+    background-color: #4b4f80 ;
 }
 
 .dark {
-    background-color: #353233 !important;
+    background-color: #353233 ;
 }
 
 .steel {
-    background-color: #585858 !important;
+    background-color: #585858 ;
 }
 
 .fairy {
-    background-color: #6e2d4c !important;
+    background-color: #6e2d4c ;
 }

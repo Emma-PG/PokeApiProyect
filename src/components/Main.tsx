@@ -1,5 +1,6 @@
 import {pokemonDesc} from '../types'
 
+
 const Main = ({img,tittle,pokemon,type,description}:pokemonDesc)=>{
     return(
         <main className='col-9 col-lg-5'>

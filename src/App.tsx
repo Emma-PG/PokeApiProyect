@@ -73,7 +73,7 @@ function App() {
   return (
     <>
       <Header handleChange={handleChange} handleSubmit={handleSubmit} />
-      <section className='d-flex flex-row-reverse justify-content-center col-12 content'>
+      <section className='d-flex flex-row-reverse justify-content-center col-12'>
         <AsideList handleClick={handleClick} />
         <Main tittle={tittle} pokemon={pokemon} img={img} type={type} description={description} />
         <AsidePercs />
