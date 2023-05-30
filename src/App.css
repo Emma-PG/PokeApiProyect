@@ -1,6 +1,5 @@
-footer { 
-    position: fixed;
-    left: 0;
+footer {
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: #e63946;
@@ -9,8 +8,18 @@ footer {
 
 }
 
+main {
+    height: inherit;
+}
+
+.content {
+    height: 100vh;
+}
+
 header {
     background-color: #e63946;
+    position: sticky;
+    top: 0;
 }
 
 section aside ul {
@@ -45,10 +54,10 @@ header button:hover {
 }
 
 
-.Others{
+.Others {
     background-color: #a8dadc;
-    border-radius: 2% 0 0 2% ;
-    height: 85vh;
+    border-radius: 2% 0 0 2%;
+    height: inherit;
 }
 
 .PokemonName {
@@ -68,7 +77,7 @@ header button:hover {
 
 .Card {
     border-radius: 0 2% 2% 0;
-    height: 85vh;
+    height: inherit;
     background-color: #457b9d;
     min-width: 282px
 }
@@ -94,80 +103,79 @@ header button:hover {
     color: #f1faeed7;
 }
 
-.List{
-    height: 80vh;
+.List {
     background-color: #f1faee;
-    height: 85vh;
+    height: inherit;
 }
 
 .fire {
-    background-color: #e63946 ;
+    background-color: #e63946;
 }
 
 .normal {
-    background-color: #a8a4a4 ;
+    background-color: #a8a4a4;
 }
 
 .water {
-    background-color: #39a1e6 ;
+    background-color: #39a1e6;
 }
 
 .electric {
-    background-color: #e6e339 ;
+    background-color: #e6e339;
 }
 
 .grass {
-    background-color: #39e664 ;
+    background-color: #39e664;
 }
 
 .ice {
-    background-color: #39e6cf ;
+    background-color: #39e6cf;
 }
 
 .fighting {
-    background-color: #e65339 ;
+    background-color: #e65339;
 }
 
 .poison {
-    background-color: #a139e6 ;
+    background-color: #a139e6;
 }
 
 .ground {
-    background-color: #946b3c ;
+    background-color: #946b3c;
 }
 
 .flying {
-    background-color: #3967e6 ;
+    background-color: #3967e6;
 }
 
 .psychic {
-    background-color: #b44f7e ;
+    background-color: #b44f7e;
 }
 
 .bug {
-    background-color: #a4e639 ;
+    background-color: #a4e639;
 }
 
 .rock {
-    background-color: #6d4f4f ;
+    background-color: #6d4f4f;
 }
 
 .ghost {
-    background-color: #61468f ;
+    background-color: #61468f;
 }
 
 .dragon {
-    background-color: #4b4f80 ;
+    background-color: #4b4f80;
 }
 
 .dark {
-    background-color: #353233 ;
+    background-color: #353233;
 }
 
 .steel {
-    background-color: #585858 ;
+    background-color: #585858;
 }
 
 .fairy {
-    background-color: #6e2d4c ;
+    background-color: #6e2d4c;
 }
